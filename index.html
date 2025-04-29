@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="picture/logo3.png" alt="logo" width="175" height="43"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>ACLEDA University of Business</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus unde voluptatum, quod ex quibusdam nesciunt porro cum consequatur quis ut asperiores atque accusamus minus.</p>
+            <a href="#" class="hero-btn">Visit us anytime</a>
+        </div>
+    </header>
+
+
+    <!-- course -->
+
+    <section class="course">
+        <h1>
+            Course We offer
+        </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque debitis ea voluptas labore natus ipsa laboriosam aliquid similique vitae ab!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Master</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium adipisci quos quam eius sed ad eveniet culpa nesciunt vero.</p>
+            </div>
+            <div class="course-col">
+                <h3>Bachelor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium adipisci quos quam eius sed ad eveniet culpa nesciunt vero.</p>
+            </div>
+            <div class="course-col">
+                <h3>Associate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusantium adipisci quos quam eius sed ad eveniet culpa nesciunt vero.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus -->
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque debitis ea voluptas labore natus ipsa laboriosam aliquid similique vitae ab!</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="picture/outside.jpg" alt="">
+                <div class="layer">
+                    <h3>Outside view</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="picture/side.jpg" alt="">
+                <div class="layer">
+                    <h3>Side view</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="picture/inside.jpg" alt="">
+                <div class="layer">
+                    <h3>Inside view</h3>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+
+<!-- Facilities -->
+ <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae fugit quibusdam nemo eum. Aut asperiores temporibus est iusto ullam.</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="picture/library.jpg" alt="">
+            <h3>Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, architecto!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="picture/field.jpg" alt="">
+            <h3>Football Field</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, architecto!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="picture/front.jpg" alt="">
+            <h3>Front side</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, architecto!</p>
+        </div>
+    </div>
+ </section>
+ <!-- testimonials -->
+<section class="testimonials">
+    <h1>Pleased Students</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, possimus?</p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="picture/person1.jpg" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quasi.</p>
+                <h3>Student 1</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </div>
+        
+        <div class="testimonials-col">
+            <img src="picture/person2.jpg" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quasi.</p>
+                <h3>Student 2</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+ <section class="contact" id="contact">
+    <h1>For any doubts contact us!</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+    <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://x.com/"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.messenger.com/"  target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+    </div>
+ </section>
+
+<!-- Javascript  -->
+    <script>
+        const navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.display = "block";
+            
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
